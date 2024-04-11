@@ -1,0 +1,102 @@
+
+$font-stack: Arial, Helvetica, sans-serif;
+$primary-color: #E2BFB3;
+$secondary-color: #FFBE98;
+$dark-color:#7E6363;
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+    .card {
+    padding: 10px;
+    width: 1000px;
+    height: 1150px;
+    position: relative;
+    
+    overflow: hidden;
+    border-radius: 20px;
+    transition: 2s;
+    
+
+
+    &_img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+
+}
+
+&_fav {
+    position: left;
+    
+    transition: 1s;
+    right: 2rem;
+    top: 2rem;
+    font-size: 4rem;
+    color: set-text-color($primary-color);
+
+    // &_fav:hover {
+    //     scale: 1.2;
+    // }
+}
+
+&:hover &_img {
+    
+    scale: 1.2;
+    
+}
+
+&_content {
+    position: absolute;
+    // background-color: $dark-color;
+    left: 0%;
+    bottom: 0;
+    padding: 5rem;
+    backdrop-filter: blur(10px);
+    transition: 0.5 cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    h2 {
+        color: set-text-color($primary-color);
+        font-weight: 700;
+        font-size: xx-large;
+        text-align: center;
+    }
+    
+
+    p{
+        color: set-text-color($secondary-color);
+        font-weight: 700;
+        font-size: x-large;
+        text-align: left;
+        padding: 0 30px;
+        margin-top: 7px;
+
+    }
+    &_:hover {
+        position: relative;
+transition: top 2s ease 0s; /* only transition top property */
+top: 0;
+    }
+}
+    &_views {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    font-size: 3rem;
+    color: set-text-color($primary-color);
+    
+P{
+    color: set-text-color($primary-color);
+    position: absolute;
+}
+}
+
+}
+
+

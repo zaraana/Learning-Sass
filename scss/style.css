@@ -1,0 +1,73 @@
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+
+.card {
+  padding: 10px;
+  width: 1000px;
+  height: 1150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: 2s;
+}
+.card_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+}
+.card_fav {
+  position: left;
+  transition: 1s;
+  right: 2rem;
+  top: 2rem;
+  font-size: 4rem;
+  color: set-text-color(#E2BFB3);
+}
+.card:hover .card_img {
+  scale: 1.2;
+}
+.card_content {
+  position: absolute;
+  left: 0%;
+  bottom: 0;
+  padding: 5rem;
+  backdrop-filter: blur(10px);
+  transition: 0.5 cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.card_content h2 {
+  color: set-text-color(#E2BFB3);
+  font-weight: 700;
+  font-size: xx-large;
+  text-align: center;
+}
+.card_content p {
+  color: set-text-color(#FFBE98);
+  font-weight: 700;
+  font-size: x-large;
+  text-align: left;
+  padding: 0 30px;
+  margin-top: 7px;
+}
+.card_content_:hover {
+  position: relative;
+  transition: top 2s ease 0s; /* only transition top property */
+  top: 0;
+}
+.card_views {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  font-size: 3rem;
+  color: set-text-color(#E2BFB3);
+}
+.card_views P {
+  color: set-text-color(#E2BFB3);
+  position: absolute;
+}
